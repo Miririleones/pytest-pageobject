@@ -1,4 +1,4 @@
-from selenium.common.exceptions import имя_исключения
+from selenium.common.exceptions import TimeoutException
 
 
 class BasePage():
@@ -13,6 +13,6 @@ class BasePage():
     def is_element_present(self, how, what):
         try:
             self.browser.find_element(how, what)
-        except(имя_исключения):
+        except(TimeoutException):
             return False
         return True
