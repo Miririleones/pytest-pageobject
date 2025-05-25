@@ -16,3 +16,9 @@ class BasePage():
         except(TimeoutException):
             return False
         return True
+    
+    def is_url_element_present(self, what):
+        try:
+            assert what in self.browser.current_url, f"{what} element in url not found"
+        except(TimeoutException):
+            return False
