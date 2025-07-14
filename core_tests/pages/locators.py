@@ -5,7 +5,13 @@ class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#registration_link")
 
 class LoginPageLocators():
-    PAGE_URL = "notlogin"
+    PAGE_URL = "https://test-dc-kz.dengi-market.kz/login"
+    LOGIN_PAGE_HEADER = (By.CSS_SELECTOR, "styled_title__JXhSU")
+    IIN_FORM = (By.CSS_SELECTOR, 'label[for="iin"]')
+    IIN_INPUT = (By.CSS_SELECTOR, "#iin")
+    IIN_LOGIN_BUTTON = (By.XPATH, '//button[@type="submit"]')
+    
+    
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
